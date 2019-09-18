@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NewClone1</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">Qf7PnooAB4sMMKZ3S8DrpSUfyeVaCzbQI1tXLqJs</string>
+    <string name="back4app_client_key">Sg5JpUxZjxsa4aYSmIZNb1SrKKWrbpfZjveRKIJB</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_req">Req</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_bottom_navigation_view">Bottom_navigation_view</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
