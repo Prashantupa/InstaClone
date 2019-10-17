@@ -1,5 +1,6 @@
 package com.example.newclone1;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -19,9 +20,11 @@ public class Bottom_navigation_view extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
+
                     break;
                 case R.id.navigation_Search:
                     mTextMessage.setText(R.string.title_search);

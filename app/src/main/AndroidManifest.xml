@@ -13,6 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".logout"></activity>
+        <activity android:name=".SettingIntent" />
+        <activity android:name=".SettingProfile" />
         <activity
             android:name=".Bottom_navigation_view"
             android:label="@string/title_activity_bottom_navigation_view" />
@@ -28,6 +31,11 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".ResetActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".FragmentHome" />
+        <activity android:name=".FragmentSearch" />
+        <activity android:name=".FragmentGallery" />
+        <activity android:name=".FragmentReq" />
+        <activity android:name=".FragmentProfile" />
 
         <meta-data
             android:name="com.parse.SERVER_URL"

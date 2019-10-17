@@ -1,6 +1,6 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <RelativeLayout
+   <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentTop="true">
@@ -21,6 +21,7 @@
         </com.google.android.material.appbar.AppBarLayout>
 
     </RelativeLayout>
+
 
 
 

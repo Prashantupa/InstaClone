@@ -25,6 +25,13 @@ public class LoginActivity extends AppCompatActivity {
 
         edEmail =  findViewById(R.id.edEmail);
         edPassword = findViewById(R.id.edPassword);
+
+        if (ParseUser.getCurrentUser()!=null){
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
+
+        }
     }
     // login using parse
     public void login(View view) {

@@ -4,6 +4,7 @@ package com.example.newclone1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
+import com.parse.ParseUser;
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -23,20 +25,20 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-     // BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
-     // bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
+      BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
+      bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
 
 
 
-      setupViewPager();
+        setupViewPager();
        // setupBottomViewPager();
 
 
     }
 
 
-  /*  private void setupBottomViewPager() {
+   /* private void setupBottomViewPager() {
         BottomNavigationViewPager adapter = new BottomNavigationViewPager(getSupportFragmentManager());
         adapter.addfragment(new FragmentHome());
         adapter.addfragment(new FragmentSearch());
@@ -51,14 +53,14 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-   /*private BottomNavigationView.OnNavigationItemSelectedListener navListener = new
+   private BottomNavigationView.OnNavigationItemSelectedListener navListener = new
             BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
                     switch (menuItem.getItemId()){
                         case R.id.navigation_home:
-                            Intent intent = new Intent(HomeActivity.this,FragmentHome.class);
+                            Intent intent = new Intent(HomeActivity.this,HomeActivity.class);
                             startActivity(intent);
 
                             break;
@@ -91,7 +93,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     return true;
                 }
-            };*/
+            };
 
 
   private void setupViewPager() {
@@ -105,10 +107,12 @@ public class HomeActivity extends AppCompatActivity {
 
       TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
       tabLayout.setupWithViewPager(viewPager);
+      tabLayout.getTabAt(1).select();//to select particular tab
 
       tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
       tabLayout.getTabAt(1).setIcon(R.drawable.ic_logoname);
       tabLayout.getTabAt(2).setIcon(R.drawable.ic_arrow);
   }
+
 
 }
